@@ -66,7 +66,7 @@ Library | Creation Date | Last Updated (GitHub) | Size | Repo Stars | # of Contr
 
 ### Worthy Notes
 - `emotion` [performed faster](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/RESULT.md) than `styled-components` back in March 12th when a comparison was done over all CSS-in-JS libraries. **However, maintainers of `styled-components` are actively improving performance and say [they are within 0.5-2x emotion's times](https://twitter.com/_philpl/status/1017312352641933317).**
-- Kent C. Dodds recommended `emotion` over `styled-components` in [this](https://twitter.com/kentcdodds/status/994230853189320705) tweet saying that it's smaller and faster. 
+- Kent C. Dodds recommended `emotion` over `styled-components` in [this tweet](https://twitter.com/kentcdodds/status/994230853189320705) saying that it's smaller and faster. 
 
 ### Contributions
 If you see a typo or something that is out-of-date or incorrect, please submit a PR and I will happily update this doc.
