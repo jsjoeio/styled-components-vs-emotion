@@ -50,6 +50,7 @@ Here's how the two libraries compare based on features and stats:
 
 ### Features
 This information was taken from the documentation websites.
+
 Library | Attaching Props? | Media Queries? | Global Styles? | Nested Selectors? | Server Side Rendering? |
 --- | :---: | :---: | :---: | :---: | :---: |
 `styled-components` | Yes | Yes| Yes | Yes | Yes   
@@ -57,6 +58,7 @@ Library | Attaching Props? | Media Queries? | Global Styles? | Nested Selectors?
 
 ### Stats
 These numbers were pulled on July 13th, 2018.
+
 Library | Creation Date | Last Updated (GitHub) | Size | Repo Stars | # of Contributors | Community Size (Spectrum)
 --- | --- | --- | --- | --- | --- | --- |
 `styled-components` | August 16th, 2016 | 2 days ago | 14.6kb | 17,636 | 210 | 3,700
