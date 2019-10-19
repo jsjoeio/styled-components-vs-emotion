@@ -1,5 +1,6 @@
 # styled-components-vs-emotion
-A short doc comparing the popular CSS-in-JS libraries `styled-components` and `emotion` as of October 2019. For a more detailed comparison, see:
+_Last updated by @dandv on October 18th, 2019_
+A short doc comparing the popular CSS-in-JS libraries `styled-components` and `emotion`. For a more detailed comparison, see:
 * [this Spectrum thread](https://spectrum.chat/styled-components/general/styled-components-vs-emotion~47206c1b-a688-424e-9e96-6f265993587e) (Aug 2018 - Mar 2019)
 * [this shorter Frontity discussion](https://community.frontity.org/t/which-one-should-we-use-emotion-vs-styled-components/27)
 
