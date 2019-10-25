@@ -1,5 +1,5 @@
 # styled-components-vs-emotion
-_Last updated by @dandv on October 18th, 2019_
+_Last updated by @JuanmaMenendez on October 25th, 2019_
 A short doc comparing the popular CSS-in-JS libraries `styled-components` and `emotion`. For a more detailed comparison, see:
 * [this Spectrum thread](https://spectrum.chat/styled-components/general/styled-components-vs-emotion~47206c1b-a688-424e-9e96-6f265993587e) (Aug 2018 - Mar 2019)
 * [this shorter Frontity discussion](https://community.frontity.org/t/which-one-should-we-use-emotion-vs-styled-components/27)
@@ -28,23 +28,18 @@ render(<Title>Hiya!</Title>)
 
 // Object syntax
 const button = styled.button({
-  color: 'blue'
+  fontSize: '1.5em',
+  textAlign: 'center',
+  color: 'palevioletred'
 });
 ```
 
 #### `emotion`
 
 ```javascript
-// Object syntax
-const titleStyles = css({
-  fontSize: '1.5em',
-  textAlign: 'center',
-  color: 'palevioletred'
-})
-
 render(<h1 className={titleStyles}>Hiya!</h1>)
 
-// Tagged template literal syntax
+// CSS syntax in tagged template literal
 render(
   <h1
     className={css`
@@ -56,6 +51,14 @@ render(
     Hiya!
   </h1>
 )
+
+// Object syntax
+const titleStyles = css({
+  fontSize: '1.5em',
+  textAlign: 'center',
+  color: 'palevioletred'
+})
+
 ```
 
 
