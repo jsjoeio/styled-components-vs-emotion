@@ -37,7 +37,6 @@ const button = styled.button({
 #### `emotion`
 
 ```javascript
-render(<h1 className={titleStyles}>Hiya!</h1>)
 
 // CSS syntax in tagged template literal
 render(
@@ -58,6 +57,8 @@ const titleStyles = css({
   textAlign: 'center',
   color: 'palevioletred'
 })
+
+render(<h1 className={titleStyles}>Hiya!</h1>)
 
 ```
 
