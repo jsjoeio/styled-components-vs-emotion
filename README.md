@@ -1,5 +1,5 @@
 # styled-components-vs-emotion
-_Last updated by @dandv on October 18th, 2019_
+_Last updated by @JuanmaMenendez on October 25th, 2019_
 A short doc comparing the popular CSS-in-JS libraries `styled-components` and `emotion`. For a more detailed comparison, see:
 * [this Spectrum thread](https://spectrum.chat/styled-components/general/styled-components-vs-emotion~47206c1b-a688-424e-9e96-6f265993587e) (Aug 2018 - Mar 2019)
 * [this shorter Frontity discussion](https://community.frontity.org/t/which-one-should-we-use-emotion-vs-styled-components/27)
@@ -28,23 +28,18 @@ render(<Title>Hiya!</Title>)
 
 // Object syntax
 const button = styled.button({
-  color: 'blue'
+  fontSize: '1.5em',
+  textAlign: 'center',
+  color: 'palevioletred'
 });
 ```
 
 #### `emotion`
 
 ```javascript
-// Object syntax
-const titleStyles = css({
-  fontSize: '1.5em',
-  textAlign: 'center',
-  color: 'palevioletred'
-})
-
 render(<h1 className={titleStyles}>Hiya!</h1>)
 
-// Tagged template literal syntax
+// CSS syntax in tagged template literal
 render(
   <h1
     className={css`
@@ -56,24 +51,16 @@ render(
     Hiya!
   </h1>
 )
+
+// Object syntax
+const titleStyles = css({
+  fontSize: '1.5em',
+  textAlign: 'center',
+  color: 'palevioletred'
+})
+
 ```
 
-In addition, `classNames` used in `emotion` are powerful because the `css` API has a special property called `composes` that allows you to create new styles composed with previously created styles. Here's an example pulled from [this Medium article](https://medium.com/@tkh44/emotion-ad1c45c6d28b) written by the creator of `emotion`:
-
-```javascript
-const imageBase = css`
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-`
-const avatarStyle = css`
-  composes: ${imageBase};
-  border: 1px solid #7519E5
-`
-
-// This would generate a classname for the previous style AND also the new avatarStyle:
-// ex. css-imageBase-12345 css-avatarStyle-12345
-```
 
 ## Comparison
 Here's how the two libraries compare based on features and stats:
@@ -81,10 +68,10 @@ Here's how the two libraries compare based on features and stats:
 ### Features - at parity
 This information was taken from the documentation websites.
 
-Library | Attaching Props? | Media Queries? | Global Styles? | Nested Selectors? | Server Side Rendering? | Theming Support?
---- | :---: | :---: | :---: | :---: | :---: | :---: |
-`styled-components` | Yes | Yes| Yes | Yes | Yes | Yes   
-`emotion` | Yes | Yes | Yes | Yes | Yes | Yes
+Library | Attaching Props? | Media Queries? | Global Styles? | Nested Selectors? | Server Side Rendering? | Theming Support? | Composition?
+--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+`styled-components` | Yes | Yes| Yes | Yes | Yes | Yes| Yes   
+`emotion` | Yes | Yes | Yes | Yes | Yes | Yes | Yes 
 
 ### Stats
 These numbers were pulled on October 18th, 2019.
