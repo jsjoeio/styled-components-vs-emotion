@@ -39,6 +39,23 @@ const button = styled.button({
 ```javascript
 
 // CSS syntax in tagged template literal
+
+const Button = styled.button`
+  padding: 32px;
+  background-color: hotpink;
+  font-size: 24px;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  &:hover {
+    color: white;
+  }
+`
+
+render(<Button>Hey! It works.</Button>)
+
+---
+
 render(
   <h1
     className={css`
